@@ -1,3 +1,3 @@
 # GoGoFood
-Group Project for Software Engineering 2020
+Group Project for a Software Engineering class at CSULA(2020).
 Implemnting MVC architecture.
