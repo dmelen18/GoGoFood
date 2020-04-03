@@ -9,30 +9,53 @@ Review:
 */
 package Model;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 
-@WebServlet("/UserAEntry")
-public class UserAEntry extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-  
-    public UserAEntry() {
-        super();
+public class UserAEntry {
+
+    Integer id;
+    String name;
+    Integer phoneNumber;
+    
+ 
+
+    public UserAEntry( Integer id, String name, Integer phoneNumber )
+    {
+        this.id = id;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+     
     }
 
+    public Integer getId()
+    {
+        return id;
+    }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+    public void setId( Integer id )
+    {
+        this.id = id;
+    }
 
+    public String getName()
+    {
+        return name;
+    }
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+    public void setName( String name )
+    {
+        this.name = name;
+    }
+    
+    public Integer getPhoneNumber()
+    {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber( Integer phoneNumber )
+    {
+        this.phoneNumber = phoneNumber;
+    }
+
 
 }
