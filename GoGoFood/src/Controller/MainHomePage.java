@@ -8,9 +8,11 @@ Review:
 
 */
 
-package Model;
+package Controller;
 
 import java.io.IOException;
+
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,11 +29,12 @@ public class MainHomePage extends HttpServlet {
         super();
     }
 
-
+ 
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 	ServletException, IOException 
 	{
-		 request.getRequestDispatcher( "/WEB-INF/GuestBook.jsp" )
+		 request.getRequestDispatcher( "/WEB-INF/MainHomePage.jsp" )
          .forward( request, response );
 	}
 
