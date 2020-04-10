@@ -16,7 +16,7 @@ particular choice made?
 * Testing. This section discusses the test cases that should be run to check
 code functionality.
 ____________________________________________________________________________________
-
+VIEW RAW TO SEE BELOW NOTES CLEARLY!
 
 Model  ↔ package
  	UserAEntry.java 	 Person ordering food
