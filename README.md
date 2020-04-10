@@ -23,7 +23,7 @@ Model  ↔ package
  	UserBEntry.java 	 Person delivering food
  	Menu.java  Carl’s Jr. Menu(currently only Carl’s)
  	MainHomePage.java  Samantha
-  ShoppingCart.java   David
+        ShoppingCart.java   David
 		
 
  Controller   ↔ package
@@ -32,7 +32,7 @@ Model  ↔ package
  	AddItem.java
  	EditItem.java
  	DeleteItem.java
-  Deliver.java
+        Deliver.java
 
 View  ↔ package
  	Menu.jsp  Carl’s Jr. Menu
