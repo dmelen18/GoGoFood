@@ -34,7 +34,7 @@ public class MainHomePage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 	ServletException, IOException 
 	{
-		 request.getRequestDispatcher( "/WEB-INF/MainHomePage.jsp" )
+		 request.getRequestDispatcher( "/MainHomePage.jsp" )
          .forward( request, response );
 	}
 

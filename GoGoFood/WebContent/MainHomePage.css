@@ -1,0 +1,296 @@
+/*
+to add .css file: 
+    GoGoFood > right click > new > other > CSS file
+*/
+@charset "ISO-8859-1";
+ 
+body {
+    background-color: #FFCE00;
+    
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 6px solid #D10000;
+}
+ul.topnav li {
+    float: left;
+}
+ul.topnav li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: black;
+}
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+ul.topnav li.right {
+    float: right;
+    background-color: #4a4f55;
+}
+ul.topnav li.middle {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, ul.topnav li {
+        float: none;
+    }
+}
+a:link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+  
+.container .buttons { /*around place and order and deliver an order*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   background-color: #555;
+   color: whitesmoke;
+   font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .buttons:hover { /*around place and order and deliver an order*/
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ .container { /*around place and order and deliver an order*/
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid #D10000; 
+  height: 200px;
+  
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 120px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: #efefef;
+    color: #AFAFAF !important;
+    text-align: center; /
+    line-height: 20px;
+    */
+}
+
+
+
+
+
+
+
+
+
+/* START OF NOTE CARD */
+
+.card-object {
+  display: grid;
+  width: 700px;
+  grid-template: "header header"
+                  "aside  main"
+                 "foot  foot";
+  font-family: courier;
+  font-size: 24px;
+  line-height: 40px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+.card-object header {
+  grid-column: header;
+  height: 40px;
+  background-image: url(https://image.ibb.co/b49eUb/dechirure.png);
+  background-repeat: repeat;
+}
+
+.card-object aside {
+  grid-area: aside;
+  width: 40px;
+  background-image: url(https://image.ibb.co/fpgtpb/trou.png);
+  background-repeat: repeat;
+}
+
+.card-object main {
+  grid-area: main;
+  background-color: white;
+}
+
+.card-object main .message{
+    background-image: url(https://image.ibb.co/iA4Dpb/line.png);
+  background-repeat: repeat;
+  background-position: 0 -10px;
+  margin: 20px 20px 0 20px;
+}
+
+.card-object footer {
+  grid-column: foot;
+  text-align: right;
+  background-color: white;
+  padding: 5px 20px 20px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.author::before{
+  content: "- ";
+}
+
+.rotate{
+  animation: rotate 2s infinite ease-in-out;
+}
+
+.floating{
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes rotate{
+  0% {
+  transform: perspective(1000px) rotateY(4deg);
+  }
+  50%{
+  transform: perspective(1000px) rotateX(-5deg);
+  }
+  100% {
+  transform: perspective(1000px) rotateY(4deg);
+  }
+}
+
+@keyframes float{
+  0% {
+  transform: perspective(1000px) translateY(0px) rotateX(5deg);
+  }
+  50%{
+  transform: perspective(1000px) translateY(10px) rotateX(-5deg);
+  }
+  100% {
+  transform: perspective(1000px) translateY(0px) rotateX(5deg);
+  }
+}
+
+.forget{
+  opacity: 0.2;
+  animation: disappear 5s infinite ease-in-out;
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 0.6;
+  }
+  50%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 0.6;
+  }
+}
+
+.forgotten{
+    opacity: 0.1;
+    background-color: black;
+}
+
+.close_btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #26262f;
+ 
+  display: inline-block;
+  padding: 1em;
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  right: 20px;
+  top:20px;
+}
+
+/* END OF NOTE CARD */
+  
+  
+  
+/* MEET THE TEAM */
+.columnTeam {
+  float: left;
+  width: 15.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.cardTeam {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerTeam {
+  padding: 0 10px;
+}
+
+.containerTeam::after, .rowTeam::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttonTeam {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonTeam:hover {
+  background-color: #555;
+}
+  
