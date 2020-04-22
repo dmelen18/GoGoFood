@@ -57,15 +57,15 @@ a:visited {
 
 
   
-.container .buttons { /*around place and order and deliver an order*/
+.container .buttons { /*place and order and deliver an order*/
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-   background-color: #555;
-   color: whitesmoke;
-   font-size: 30px;
+  background-color: #555;
+  color: whitesmoke;
+  font-size: 30px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
