@@ -30,7 +30,7 @@ import Model.ShoppingCart;
 	    }
 
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			request.getRequestDispatcher("/WEB-INF/ViewMenuUserB.jsp").forward(request, response);
+			request.getRequestDispatcher("/ViewMenuUserB.jsp").forward(request, response);
 		}
 
 
