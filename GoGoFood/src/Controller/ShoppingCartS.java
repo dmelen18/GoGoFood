@@ -53,7 +53,7 @@ public class ShoppingCartS extends HttpServlet {
 		
 		getServletContext().setAttribute("orderItems", orderItems);
 		
-		request.getRequestDispatcher("/WEB-INF/ShoppingCartJ.jsp").forward(request, response);
+		request.getRequestDispatcher("/ShoppingCart.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

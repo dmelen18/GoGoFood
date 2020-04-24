@@ -7,8 +7,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/WEB-INF/Images"/>
                 
         <property name="context-root" value="GoGoFood"/>
-                
-        <property name="java-output-path" value="/GoGoFood/build/classes"/>
+        <property name="java-output-path" value="/GoGoFood/bin"/>
             
     </wb-module>
     
