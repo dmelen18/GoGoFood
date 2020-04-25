@@ -53,7 +53,7 @@ Review:
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="MainHomePage">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link disabled" href="#">Shopping Cart</a>
+            <a class="nav-item nav-link disabled" href="ShoppingCartS">Shopping Cart</a>
           </div>
         </div>
       </nav>
