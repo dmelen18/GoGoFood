@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Model.FoodItem;
+import Model.ShoppingCart;
 
 @WebServlet(urlPatterns="/ShoppingCartS", loadOnStartup=1)
 public class ShoppingCartS extends HttpServlet {
@@ -26,21 +27,22 @@ public class ShoppingCartS extends HttpServlet {
     public void init(ServletConfig config) throws ServletException{
     	super.init(config);
     	
-    	ArrayList<FoodItem> shoppingCart = new ArrayList<FoodItem>();
-		getServletContext().setAttribute("shoppingCart", shoppingCart);
+//    	ShoppingCart shoppingCart = new ShoppingCart(4, "Name", "Location", new ArrayList<FoodItem>());
+//		getServletContext().setAttribute("shoppingCart", shoppingCart);
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		@SuppressWarnings("unchecked")
-		ArrayList<FoodItem> shoppingCart = (ArrayList<FoodItem>) (getServletContext().getAttribute("shoppingCart"));
+//		ArrayList<FoodItem> shoppingCart = (ArrayList<FoodItem>) (getServletContext().getAttribute("shoppingCart"));
+		ShoppingCart shoppingCart = (ShoppingCart) (getServletContext().getAttribute("shoppingCart"));
 		
 		NumberFormat formatter = new DecimalFormat("#0.00"); 
 		
 		double subtotalCost = 0;
 		
-		for (int i = 0; i < shoppingCart.size(); i++) {
-			subtotalCost += shoppingCart.get(i).getItemPrice();
-		}
+//		for (int i = 0; i < shoppingCart.getFoodItems().size(); i++) {
+//			subtotalCost += shoppingCart.getFoodget(i).getItemPrice();
+//		}
 		
 		double deliveryCost = subtotalCost * 0.40;
 		double feesCost = subtotalCost * 0.09;
@@ -55,6 +57,7 @@ public class ShoppingCartS extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ArrayList<ShoppingCart> orders = (ArrayList<ShoppingCart>) getServletContext().getAttribute("orders");
 		
 	}
 

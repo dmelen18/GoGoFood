@@ -50,6 +50,7 @@ Review:
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="MainHomePage">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="FoodRequest">Menu</a>
             <a class="nav-item nav-link active" href="ShoppingCartS">Shopping Cart</a>
           </div>
         </div>
@@ -84,33 +85,33 @@ Review:
 							<div class='col-4'>
 								<table class='table table-hover table-borderless'>
 									<tr class='h5'>
-										<th>Order Summary</th>
+										<th colspan='2'  style="text-align:center">Order Summary</th>
 									</tr>
 									
 									<tr>
 										<td>Subtotal</td>
-										<td>$${subtotalCost}</td>
+										<td style="text-align:right">$${subtotalCost}</td>
 									</tr>
 									
 									<tr>
 										<td>Delivery</td>
-										<td>$${deliveryCost}</td>
+										<td style="text-align:right">$${deliveryCost}</td>
 									</tr>
 									
 									<tr>
 										<td>Est. taxes & fees</td>
-										<td>$${feesCost}</td>
+										<td style="text-align:right">$${feesCost}</td>
 									</tr>
 									
 									
 									<tr class='font-weight-bold'>
 										<td>Total</td>
-										<td>$${totalCost}</td>
+										<td style="text-align:right">$${totalCost}</td>
 									</tr>
 									
 									<tr>
 										<c:if test='${totalCost > 0.00}'>
-											<td><button type='button' class = btn btn-primary'>Pay Now</button></td>
+											<td colspan='2'><button type='button' class='btn btn-dark btn-block' href='OrderManagementS'>Pay Now</button></td>
 										</c:if>
 									</tr>
 								</table>
