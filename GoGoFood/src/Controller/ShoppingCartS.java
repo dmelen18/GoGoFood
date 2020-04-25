@@ -1,9 +1,12 @@
 package Controller;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,52 +15,47 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.FoodItem;
 
-@WebServlet("/ShoppingCartS")
+@WebServlet(urlPatterns="/ShoppingCartS", loadOnStartup=1)
 public class ShoppingCartS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     public ShoppingCartS() {
         super();
     }
+    
+    public void init(ServletConfig config) throws ServletException{
+    	super.init(config);
+    	
+    	ArrayList<FoodItem> shoppingCart = new ArrayList<FoodItem>();
+		getServletContext().setAttribute("shoppingCart", shoppingCart);
+    }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		@SuppressWarnings("unchecked")
+		ArrayList<FoodItem> shoppingCart = (ArrayList<FoodItem>) (getServletContext().getAttribute("shoppingCart"));
 		
-		List<FoodItem> orderItems = new ArrayList<>();
-		FoodItem item1 = new FoodItem("Burger", "- Pickles", 4.99);
-		orderItems.add(item1);
+		NumberFormat formatter = new DecimalFormat("#0.00"); 
 		
-		FoodItem item2 = new FoodItem("Medium fries", 2.79);
-		orderItems.add(item2);
+		double subtotalCost = 0;
 		
-		FoodItem item3 = new FoodItem("Small coke", 0.99);
-		orderItems.add(item3);
+		for (int i = 0; i < shoppingCart.size(); i++) {
+			subtotalCost += shoppingCart.get(i).getItemPrice();
+		}
 		
-		FoodItem item4 = new FoodItem("Chocolate milkshake", 1.59);
-		orderItems.add(item4);
+		double deliveryCost = subtotalCost * 0.40;
+		double feesCost = subtotalCost * 0.09;
+		double totalCost = subtotalCost + deliveryCost + feesCost;
 		
-		FoodItem item5 = new FoodItem("Pie", 24.99);
-		orderItems.add(item5);
-		
-		FoodItem item6 = new FoodItem("Taco", "- Onion", 3.49);
-		orderItems.add(item6);
-		
-		FoodItem item7 = new FoodItem("Chicken tenders", 7.99);
-		orderItems.add(item7);
-		
-		FoodItem item8 = new FoodItem("Noodles", 5.49);
-		orderItems.add(item8);
-		
-		FoodItem item9 = new FoodItem("Burger", "- Lettuce", 24.99);
-		orderItems.add(item9);
-		
-		
-		getServletContext().setAttribute("orderItems", orderItems);
-		
+		getServletContext().setAttribute("subtotalCost", formatter.format(subtotalCost));
+		getServletContext().setAttribute("deliveryCost", formatter.format(deliveryCost));
+		getServletContext().setAttribute("feesCost", formatter.format(feesCost));
+		getServletContext().setAttribute("totalCost", formatter.format(totalCost));
+	
 		request.getRequestDispatcher("/ShoppingCart.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		
 	}
 
 }
