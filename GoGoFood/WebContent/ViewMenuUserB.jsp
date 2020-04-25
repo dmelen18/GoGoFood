@@ -28,7 +28,7 @@ Test:
         <li><img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo" style="width:150px;height:120px"></li>
     </ul>
     <h1>Welcome Runners</h1>
-    <p>Thank you for participating in delivery</p>
+    <p>Thank you for participating in delivery, your service is appreciated</p>
     
     <c:choose>
         <c:when test="${orders.size() > 0}">
