@@ -58,7 +58,7 @@ Review:
 		<div class="column">
 			<div class="container">
 				<div class="buttons">
-					<a href="UserB_Deliver" target="_blank">Deliver an Order</a>
+					<a href="UserB_Deliver">Deliver an Order</a>
 				</div>
 			</div>
 		</div>
