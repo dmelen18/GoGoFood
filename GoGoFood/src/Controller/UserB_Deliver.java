@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.FoodItem;
 import Model.ShoppingCart;
 
 
@@ -24,8 +25,13 @@ import Model.ShoppingCart;
 	    public void init (ServletConfig config) throws ServletException{
 	    	super.init(config);
 	    	ArrayList<ShoppingCart> list = new ArrayList<ShoppingCart>();
-	    	list.add(new ShoppingCart(1, "David", "ETA-310", "Famous Star Burger"));
-	    	list.add(new ShoppingCart(2, "John", "SHC-123", "Chicken Tenders"));
+	    	ArrayList<FoodItem> items = new ArrayList<FoodItem>();
+	    	items.add(new FoodItem("Chicken Tenders", 7.99));
+	    	ArrayList<FoodItem> items2 = new ArrayList<FoodItem>();
+	    	items2.add(new FoodItem("Famous Star Burger", 7.99));
+	    	items2.add(new FoodItem("Small Fries", 1.99));
+	    	list.add(new ShoppingCart(1, "David", "ETA-310", "231-345-9080", items));
+	    	list.add(new ShoppingCart(2, "John", "SHC-123", "321-435-8901", items2));
 	    	getServletContext().setAttribute("orders", list);
 	    }
 
