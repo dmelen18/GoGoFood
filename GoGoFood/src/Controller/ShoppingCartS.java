@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.FoodItem;
 
-@WebServlet("/ShoppingCartS")
+@WebServlet(urlPatterns="/ShoppingCartS", loadOnStartup=1)
 public class ShoppingCartS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
