@@ -31,9 +31,9 @@ public class FoodRequest extends HttpServlet {
     public void init(ServletConfig config) throws ServletException{
     	super.init(config);
 //		Creating 3 Combo meals 
-		FoodItem combo1 = new FoodItem(1,"All Star Meal", 6.99, "imgs/1.png");
-		FoodItem combo2 = new FoodItem(2,"Gravity Burger", 10.99, "imgs/1.png");
-		FoodItem combo3 = new FoodItem(3,"Cool Taco", 5.99, "imgs/1.png");
+		FoodItem combo1 = new FoodItem(1,"All Star Meal", 6.99, "img/1.png");
+		FoodItem combo2 = new FoodItem(2,"Gravity Burger", 10.99, "img/1.png");
+		FoodItem combo3 = new FoodItem(3,"Cool Taco", 5.99, "img/1.png");
 		
 //		Creating Array to hold combos to display in JSP 
 		ArrayList<FoodItem> combos = new ArrayList<FoodItem>();

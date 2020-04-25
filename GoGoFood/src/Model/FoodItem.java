@@ -2,8 +2,10 @@ package Model;
 
 
 public class FoodItem {
+	int id; 
 	String itemName;
 	String comments;
+	String link;
 	double itemPrice;
 	
 	public FoodItem(String itemName, double itemPrice) {
@@ -16,6 +18,13 @@ public class FoodItem {
 		this.itemName = itemName;
 		this.itemPrice = itemPrice;
 		this.comments = comments;
+	}
+	
+	public FoodItem(int id, String itemName, double price, String link) {
+		this.id = id;
+		this.itemName = itemName;
+		this.itemPrice = price;
+		this.link = link;	
 	}
 
 	public String getItemName() {
@@ -40,5 +49,20 @@ public class FoodItem {
 
 	public void setComments(String comments) {
 		this.comments = comments;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getLink() {
+		return this.link;
+	}
+	
+	public void setLink(String l) {
+		this.link = l;
 	}
 }
