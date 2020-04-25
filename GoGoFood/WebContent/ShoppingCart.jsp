@@ -74,7 +74,7 @@ Review:
 								<c:forEach items='${shoppingCart}' var='item'>
 									<tr>
 									<td>${item.itemName}</td>
-									<td class='text-right'>${item.itemPrice}</td>
+									<td class='text-right'>$${item.itemPrice}</td>
 									</tr>
 								</c:forEach>
 					

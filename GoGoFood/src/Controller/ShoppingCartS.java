@@ -28,6 +28,11 @@ public class ShoppingCartS extends HttpServlet {
     	
     	ArrayList<FoodItem> shoppingCart = new ArrayList<FoodItem>();
 		getServletContext().setAttribute("shoppingCart", shoppingCart);
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		@SuppressWarnings("unchecked")
+		ArrayList<FoodItem> shoppingCart = (ArrayList<FoodItem>) (getServletContext().getAttribute("shoppingCart"));
 		
 		NumberFormat formatter = new DecimalFormat("#0.00"); 
 		
@@ -37,17 +42,15 @@ public class ShoppingCartS extends HttpServlet {
 			subtotalCost += shoppingCart.get(i).getItemPrice();
 		}
 		
-		double deliveryCost = subtotalCost * 0.20;
-		double feesCost = subtotalCost * 0.9;
+		double deliveryCost = subtotalCost * 0.40;
+		double feesCost = subtotalCost * 0.09;
 		double totalCost = subtotalCost + deliveryCost + feesCost;
 		
 		getServletContext().setAttribute("subtotalCost", formatter.format(subtotalCost));
 		getServletContext().setAttribute("deliveryCost", formatter.format(deliveryCost));
 		getServletContext().setAttribute("feesCost", formatter.format(feesCost));
 		getServletContext().setAttribute("totalCost", formatter.format(totalCost));
-    }
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
 		request.getRequestDispatcher("/ShoppingCart.jsp").forward(request, response);
 	}
 
