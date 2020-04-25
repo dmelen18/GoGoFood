@@ -55,55 +55,63 @@ Review:
         </div>
       </nav>
     <!-- END - used styling code from Peter's FoodRequest.jsp for consistency -->
-	<div class='container'>
-		<div class='row py-4 border-bottom'>
-			<div class='col' align='center'>
-				<h3><b>Shopping Cart</b></h3>
-				<p class='h5 text-muted'>${fn:length(shoppingCart)} items in cart</p>
-			</div>
-		</div>
-	
-		<div class='row py-4'>
-			<div class='col-8 border-right'>
-				<table class='table table-hover table-borderless'>
-	
-				<c:forEach items='${shoppingCart}' var='item'>
-					<tr>
-					<td>${item.itemName}</td>
-					<td class='text-right'>${item.itemPrice}</td>
-					</tr>
-				</c:forEach>
-	
-				</table>
-			</div>
-
-			<div class='col-4'>
-				<table class='table table-hover table-borderless'>
-					<tr class='h5'>
-					<th>Order Summary</th>
-					</tr>
+    <div class='container'>
+    	<div class='row'>
+    		<div class='col align-self-center'>
+				<div class='card'>
+					<div class='card-body'>
+						<div class='row py-4 border-bottom'>
+							<div class='col' align='center'>
+								<h3><b>Shopping Cart</b></h3>
+								<p class='h5 text-muted'>${fn:length(shoppingCart)} items in cart</p>
+							</div>
+						</div>
 					
-					<tr>
-					<td>Subtotal</td>
-					<td>$${subtotalCost}</td>
-					</tr>
+						<div class='row py-4'>
+							<div class='col-8 border-right'>
+								<table class='table table-hover table-borderless'>
 					
-					<tr>
-					<td>Delivery</td>
-					<td>$${deliveryCost}</td>
-					</tr>
+								<c:forEach items='${shoppingCart}' var='item'>
+									<tr>
+									<td>${item.itemName}</td>
+									<td class='text-right'>${item.itemPrice}</td>
+									</tr>
+								</c:forEach>
 					
-					<tr>
-					<td>Est. taxes & fees</td>
-					<td>$${feesCost}</td>
-					</tr>
-					
-					
-					<tr class='font-weight-bold'>
-					<td>Total</td>
-					<td>$${totalCost}</td>
-					</tr>
-				</table>
+								</table>
+							</div>
+				
+							<div class='col-4'>
+								<table class='table table-hover table-borderless'>
+									<tr class='h5'>
+									<th>Order Summary</th>
+									</tr>
+									
+									<tr>
+									<td>Subtotal</td>
+									<td>$${subtotalCost}</td>
+									</tr>
+									
+									<tr>
+									<td>Delivery</td>
+									<td>$${deliveryCost}</td>
+									</tr>
+									
+									<tr>
+									<td>Est. taxes & fees</td>
+									<td>$${feesCost}</td>
+									</tr>
+									
+									
+									<tr class='font-weight-bold'>
+									<td>Total</td>
+									<td>$${totalCost}</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
