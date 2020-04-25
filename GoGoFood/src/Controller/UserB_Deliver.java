@@ -13,7 +13,7 @@ package Controller;
 import Model.ShoppingCart;
 
 
-	@WebServlet("/UserB_Deliver")
+	@WebServlet(urlPatterns="/UserB_Deliver", loadOnStartup=1)
 	public class UserB_Deliver extends HttpServlet {
 		private static final long serialVersionUID = 1L;
 	       
