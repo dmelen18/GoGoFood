@@ -71,7 +71,7 @@ Review:
 		                      <h5 class="card-title">${combo.itemName}</h5>
 		                      <p class="card-text">$${combo.itemPrice}</p>
 		                       <input type="hidden" name='id' value='${combo.id}'>
-		                     <button class="btn btn-primary" type='submit'> <a href="#" class="text-white"><i class="fas fa-cart-plus"></i> Add to Cart</a></button>
+		                     <button class="btn btn-primary" type='submit'> <i class="fas fa-cart-plus"></i> Add to Cart</button>
 		                    </div>
 		                  </div>
 		            </div>
