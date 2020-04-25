@@ -1,0 +1,26 @@
+body{
+	background-color: orange;
+}
+.navbar{
+	background-color: #ffc830;
+}
+.top-banner{
+	background-color:#FFFFFF;
+	padding:50px;
+	margin: 10px 0 10px 0;
+}
+.container.spacer{
+	padding: 50px;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background-color: #ffc830;
+	color: #000000 !important;
+	text-align: center; 
+	line-height: 20px;
+}
+

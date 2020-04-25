@@ -22,49 +22,34 @@ Review:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoGo Food | Order Food </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   	<link rel="stylesheet" href="css/foodrequest.style.css">
    	<script src="https://kit.fontawesome.com/0c497e39db.js" crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-color: orange;
-        }
-        .container.spacer{
-            padding: 50px;
-        }
-        .footer{
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 10px;
-            background-color: #efefef;
-            color: #AFAFAF !important;
-            text-align: center; /
-            line-height: 20px;
-            */
-        }
-    </style>  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">GoGoFood</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="MainHomePage">
+         <img src="img/gogofood.png" width="30" height="30" class="d-inline-block align-top" alt="">
+         GoGoFood</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="MainHomePage">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link disabled" href="ShoppingCartS">Shopping Cart</a>
+            <a class="nav-item nav-link active" href="FoodRequest">Menu <span class="sr-only">(current)</span></a>
+          </div>
+          <div class="navbar-nav ml-lg-auto">
+            <a class="nav-item nav-link" href="ShoppingCartS"><i class="fas fa-shopping-cart"></i> Cart</a>
           </div>
         </div>
-      </nav>
-      <div class="spacer"></div>
+      </nav>      
     <div class="container spacer">
-    
-    
-        <div class="row mb-5">
+    	<div class="top-banner">
+    		<h1 class="text-center">ENJOY OUR TOP PICKS</h1>
+    	</div>
+        <div class="row justify-content-between mb-5">
         	<c:forEach items='${combos}' var='combo'> 
         		<form action="FoodRequest" method="POST">
-		            <div class="col-3">
+		            <div class="col">
 		                <div class="card text-center" style="width: 18rem;">
 		                    <img class="card-img-top" src='${combo.link}' alt="Card image cap">
 		                    <div class="card-body">
