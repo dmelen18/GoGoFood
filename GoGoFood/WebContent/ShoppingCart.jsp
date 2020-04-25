@@ -84,28 +84,34 @@ Review:
 							<div class='col-4'>
 								<table class='table table-hover table-borderless'>
 									<tr class='h5'>
-									<th>Order Summary</th>
+										<th>Order Summary</th>
 									</tr>
 									
 									<tr>
-									<td>Subtotal</td>
-									<td>$${subtotalCost}</td>
+										<td>Subtotal</td>
+										<td>$${subtotalCost}</td>
 									</tr>
 									
 									<tr>
-									<td>Delivery</td>
-									<td>$${deliveryCost}</td>
+										<td>Delivery</td>
+										<td>$${deliveryCost}</td>
 									</tr>
 									
 									<tr>
-									<td>Est. taxes & fees</td>
-									<td>$${feesCost}</td>
+										<td>Est. taxes & fees</td>
+										<td>$${feesCost}</td>
 									</tr>
 									
 									
 									<tr class='font-weight-bold'>
-									<td>Total</td>
-									<td>$${totalCost}</td>
+										<td>Total</td>
+										<td>$${totalCost}</td>
+									</tr>
+									
+									<tr>
+										<c:if test='${totalCost > 0.00}'>
+											<td><button type='button' class = btn btn-primary'>Pay Now</button></td>
+										</c:if>
 									</tr>
 								</table>
 							</div>
