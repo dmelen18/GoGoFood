@@ -2,12 +2,12 @@
         
     <wb-module deploy-name="GoGoFood">
                 
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/WEB-INF/Images"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
                 
         <property name="context-root" value="GoGoFood"/>
-        <property name="java-output-path" value="/GoGoFood/bin"/>
+        <property name="java-output-path" value="/GoGoFood/build/classes"/>
             
     </wb-module>
     
