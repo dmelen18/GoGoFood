@@ -34,12 +34,13 @@ Test:
         <c:when test="${orders.size() > 0}">
         <h2>Orders available for delivery</h2>
         <table border = "1" style = "border-collapse: collapse">
-        <tr><th>Name</th><th>Location</th><th>Details</th></tr>
+        <tr><th>Name</th><th>Location</th><th>Phone Number</th><th>Order Details</th></tr>
             <c:forEach items="${orders}" var="order">
                 <tr>
                 <td>${order.getName()}</td>
+                <td>${order.getPhoneNumber()}</td>
                 <td>${order.getLocation()}</td>
-                <td>${order.getDetails()}</td>
+                <td>${order.printItems()}</td>
                 <td><a href = "Deliver?id=${order.getId()}">Sign up to deliver</a></td>
                 </tr>
             </c:forEach>

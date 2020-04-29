@@ -1,17 +1,21 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class ShoppingCart {
 	private Integer id;
 	private String name;
+	private String phoneNumber;
 	private String location;
-	private String details;
+	private ArrayList<FoodItem> items;
 	
-	public ShoppingCart(Integer id, String name, String location, String details) {
+	public ShoppingCart(Integer id, String name, String phoneNumber, String location, ArrayList<FoodItem> items) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.phoneNumber = phoneNumber;
 		this.location = location;
-		this.details = details;
+		this.items = items;
 	}
 
 	public Integer getId() {
@@ -30,6 +34,14 @@ public class ShoppingCart {
 		this.name = name;
 	}
 
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
 	public String getLocation() {
 		return location;
 	}
@@ -38,13 +50,25 @@ public class ShoppingCart {
 		this.location = location;
 	}
 
-	public String getDetails() {
-		return details;
+	public ArrayList<FoodItem> getItems() {
+		return items;
 	}
 
-	public void setDetails(String details) {
-		this.details = details;
+	public void setItems(ArrayList<FoodItem> items) {
+		this.items = items;
 	}
+	public String printItems() {
+		StringBuilder sb = new StringBuilder();
+		double sum = 0;
+		for(FoodItem f: this.items) {
+			sum += f.getItemPrice();
+			sb.append(f.itemName + ", \n");
+		}
+		sb.append("\nTotal Price: " + sum);
+		return sb.toString();
+	}
+
+	
 	
 	
 	
