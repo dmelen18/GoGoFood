@@ -16,7 +16,7 @@ import Model.FoodItem;
 /**
  * Servlet implementation class FoodRequest
  */
-@WebServlet("/FoodRequest")
+@WebServlet(urlPatterns="/FoodRequest", loadOnStartup=1)
 public class FoodRequest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
