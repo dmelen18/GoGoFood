@@ -17,7 +17,9 @@ public class OrderManagementS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     public OrderManagementS() {
-        super();
+    	//Main list of ALL orders retrieved from UserB_Deliver.java class
+    	@SuppressWarnings("unchecked")
+		ArrayList<ShoppingCart> allOrder = (ArrayList<ShoppingCart>) (getServletContext().getAttribute("orders"));
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
