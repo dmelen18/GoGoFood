@@ -8,6 +8,7 @@ public class ShoppingCart {
 	private String phoneNumber;
 	private String location;
 	private ArrayList<FoodItem> items;
+	private Runner runner;
 	
 	public ShoppingCart(Integer id, String name, String phoneNumber, String location) {
 		super();
@@ -62,9 +63,14 @@ public class ShoppingCart {
 	public ArrayList<FoodItem> getItems() {
 		return items;
 	}
+	public void setRunner(Runner r) {
+		this.runner = r;
+	}
+	public Runner getRunner() {
+		return this.runner;
+	}
 	
-	public void addItem(FoodItem i)
-	{
+	public void addItem(FoodItem i){
 		items.add(i);
 	}
 	public void setItems(ArrayList<FoodItem> items) {
