@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.Runner;
 import Model.ShoppingCart;
 
 @WebServlet("/Deliver")
@@ -45,7 +46,12 @@ public class Deliver extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		ShoppingCart s = getEntry(i);
+		
+		if(!request.getParameter("runner").equalsIgnoreCase("") && !request.getParameter("phone").equalsIgnoreCase("")){
+			s.setRunner(new Runner(request.getParameter("runner"), request.getParameter("phone")));
+		}
+		response.sendRedirect( "UserB_Deliver" );
 	}
 
 }
