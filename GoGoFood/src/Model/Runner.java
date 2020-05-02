@@ -27,7 +27,7 @@ public class Runner {
 
 	@Override
 	public String toString() {
-		return "Runner: " + name + ", Phone Number: " + number;
+		return name + ", Phone Number: " + number;
 	}
 	
 	
