@@ -1,8 +1,8 @@
 /* 
 Put name on where you contributed.
 
-Design:
-Code:
+Design: Samantha 
+Code: Samantha 
 Test:
 Review:
 
