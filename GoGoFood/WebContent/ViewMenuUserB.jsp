@@ -25,7 +25,9 @@ Test:
 <body>
     
     <ul class="topnav">
-        <li><img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo" style="width:150px;height:120px"></li>
+        <a class="navbar-brand" href="MainHomePage"><li><img
+				src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
+				style="width: 100px; height: 70px"></li></a>
     </ul>
     <h1>Welcome Runners</h1>
     <p>Thank you for participating in delivery</p>
