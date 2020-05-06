@@ -1,10 +1,8 @@
-
-
 <!-- 
 Put name on where you contributed.
 
-Design:
-Code:
+Design: Samantha
+Code: Samantha
 Test:
 Review:
 
@@ -62,9 +60,9 @@ Review:
 								style="width: 250px; height: 150px;">
 							<div class="card-body">
 								<input type="hidden" name='id' value='${foodCourtOptions.id}'>
-								<button class="btn btn-primary" type='submit'>
+							<a href='FoodRequest'><button class="btn btn-primary" type='button' onclick="FoodRequest">
 								<i class="fas fa-thumbs-up"></i>Order Here
-								</button>
+								</button></a>
 							</div>
 						</div>
 					</div>
@@ -89,9 +87,9 @@ Review:
 								style="width: 250px; height: 150px;">
 							<div class="card-body">
 								<input type="hidden" name='id' value='${diningOptions.id}'>
-								<button class="btn btn-primary" type='submit'>
-									<i class="fas fa-thumbs-up"></i> Order Here
-								</button>
+								<a href='FoodRequest'><button class="btn btn-primary disabled" type='submit'>
+									<i class="fas fa-thumbs-up"></i> Coming Soon
+								</button></a>
 							</div>
 						</div>
 					</div>
