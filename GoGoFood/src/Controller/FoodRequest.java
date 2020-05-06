@@ -12,13 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 import Model.FoodItem;
+import Model.ShoppingCart;
 
 /**
  * Servlet implementation class FoodRequest
  */
-@WebServlet("/FoodRequest")
+@WebServlet(urlPatterns="/FoodRequest", loadOnStartup=1)
 public class FoodRequest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	int i = 0; 
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -45,6 +47,8 @@ public class FoodRequest extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ShoppingCart shoppingcart = new ShoppingCart(i++, "Dwayne the Rock Johnson", "310-0690-0420", "LIB");
+		getServletContext().setAttribute("shoppingcart", shoppingcart);
 		request.getRequestDispatcher("/FoodRequest.jsp").forward(request, response);
 	}
 
@@ -53,6 +57,8 @@ public class FoodRequest extends HttpServlet {
 	 */
 	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//gets user shoppingcart
+		ShoppingCart shoppingcart = (ShoppingCart) (getServletContext().getAttribute("shoppingcart"));
 		//retrieves users food request
 		int id = Integer.parseInt(request.getParameter("id"));
 		System.out.print(id);
@@ -63,7 +69,7 @@ public class FoodRequest extends HttpServlet {
 		//Searches combos for food with matching id to add to shopping cart
 		for(FoodItem f: combos) {
 			if(id == f.getId()) {
-				sc.add(f);
+				shoppingcart.addItem(f);
 			}
 		}
 		response.sendRedirect("FoodRequest");

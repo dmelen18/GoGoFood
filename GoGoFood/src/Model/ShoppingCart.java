@@ -8,6 +8,16 @@ public class ShoppingCart {
 	private String phoneNumber;
 	private String location;
 	private ArrayList<FoodItem> items;
+	private Runner runner;
+	
+	public ShoppingCart(Integer id, String name, String phoneNumber, String location) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.location = location;
+		items = new ArrayList<FoodItem>();
+	}
 	
 	public ShoppingCart(Integer id, String name, String phoneNumber, String location, ArrayList<FoodItem> items) {
 		super();
@@ -53,7 +63,16 @@ public class ShoppingCart {
 	public ArrayList<FoodItem> getItems() {
 		return items;
 	}
-
+	public void setRunner(Runner r) {
+		this.runner = r;
+	}
+	public Runner getRunner() {
+		return this.runner;
+	}
+	
+	public void addItem(FoodItem i){
+		items.add(i);
+	}
 	public void setItems(ArrayList<FoodItem> items) {
 		this.items = items;
 	}

@@ -44,7 +44,7 @@ Review:
       </nav>      
     <div class="container spacer">
     	<div class="top-banner">
-    		<h1 class="text-center">ENJOY OUR TOP PICKS</h1>
+    		<h1 class="text-center">ENJOY OUR TOP PICKS!</h1>
     	</div>
         <div class="row justify-content-between mb-5">
         	<c:forEach items='${combos}' var='combo'> 
