@@ -81,7 +81,7 @@ Review:
 
   <div class="columnTeam">
     <div class="cardTeam">
-    <img src="img/hamburgerClipart.png" alt="John" style="width:50%">
+    <img src="img/theTeam/Ana.jpg" alt="John" style="width:50%">
       <div class="containerTeam">
         <h3>Ana Guardado</h3>
         <p class="title">CEO & Founder</p>
