@@ -48,7 +48,7 @@ Review:
 	<div class="container spacer">
 
 		<div class="top-banner">
-			<h1 class="text-center">Food Court</h1>
+			<h1 class="text-center">Currently Serving</h1>
 		</div>
 
 		<div class="row justify-content-between mb-5">
@@ -60,8 +60,8 @@ Review:
 								style="width: 250px; height: 150px;">
 							<div class="card-body">
 								<input type="hidden" name='id' value='${foodCourtOptions.id}'>
-							<a href='FoodRequest'><button class="btn btn-primary" type='button' onclick="FoodRequest">
-								<i class="fas fa-thumbs-up"></i>Order Here
+							<a href='FoodRequest'><button class="btn btn-primary disable" type='button' onclick="FoodRequest">
+								<i class="fas fa-thumbs-up"></i>  Order Here
 								</button></a>
 							</div>
 						</div>
@@ -73,10 +73,10 @@ Review:
 	</div>
 	<!-- END OF FOOD COURT -->
 
-	<!-- **************************** CAMPUS DINING *********************************************** -->
+	<!-- **************************** COMING SOON *********************************************** -->
 	<div class="container spacer">
 		<div class="top-banner">
-			<h1 class="text-center">Campus Dining</h1>
+			<h1 class="text-center">COMING SOON</h1>
 		</div>
 		<div class="row justify-content-between mb-5">
 			<c:forEach items='${diningOptions}' var='diningOptions'>
@@ -88,7 +88,7 @@ Review:
 							<div class="card-body">
 								<input type="hidden" name='id' value='${diningOptions.id}'>
 								<a href='FoodRequest'><button class="btn btn-primary disabled" type='submit'>
-									<i class="fas fa-thumbs-up"></i> Coming Soon
+									<i class=""></i> Coming Soon
 								</button></a>
 							</div>
 						</div>
@@ -98,7 +98,7 @@ Review:
 
 		</div>
 	</div>
-	<!-- END OF CAMPUS DINING-->
+	<!-- END OF COMING SOON-->
 
 	<footer class="footer"> ©2020 GoGo Food - California State
 		University, Los Angeles </footer>

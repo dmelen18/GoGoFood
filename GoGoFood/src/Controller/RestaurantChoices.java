@@ -25,35 +25,41 @@ public class RestaurantChoices extends HttpServlet {
     
     public void init(ServletConfig config) throws ServletException{
     	super.init(config);
-//		Creating food court options
+    	
+//		Currently servicing     	
+//		COMING SOON	
+    	
+    	
+//		Creating food options
 		Restaurants carlsJr = new Restaurants(1,"Carl's Jr.", "img/foodCourt/carlsjr.png");
+//		Below food options are not yet available but COMING SOON
 		Restaurants elPolo = new Restaurants(2,"elPolo", "img/foodCourt/elpolo.png");
 		Restaurants sbarro = new Restaurants(3,"sbarro", "img/foodCourt/sbarro.png");
 		Restaurants johnysKitchen = new Restaurants(4,"johnysKitchen", "img/foodCourt/johnysKitchen.jpeg");
 		Restaurants kikka = new Restaurants(5,"kikka", "img/foodCourt/kikka.png");
 		Restaurants theSpot = new Restaurants(6,"theSpot", "img/foodCourt/theSpot.jpg");
+		Restaurants cafe47 = new Restaurants(7,"cafe47", "img/campusDining/cafe47.jpg");
+		Restaurants everytable = new Restaurants(8,"everytable", "img/campusDining/everytable.png");
+		Restaurants goldenEagleExpress = new Restaurants(9,"goldenEagleExpress", "img/campusDining/goldenEagleExpress.jpeg");
+		Restaurants juiceItUp = new Restaurants(10,"juiceItUp", "img/campusDining/juiceItUp.png");
+		Restaurants kingCoffee = new Restaurants(11,"kingCoffee", "img/campusDining/kingCoffee.jpeg");
+		Restaurants starbucks = new Restaurants(12,"starbucks", "img/campusDining/starbucks.png");	
 	
-		
-//		Creating Array to hold food court options to display in JSP 
+	
+//		Creating Array to hold food options to display in JSP 
 		ArrayList<Restaurants> foodCourtOptions = new ArrayList<Restaurants>();
 		foodCourtOptions.add(carlsJr); 
-		foodCourtOptions.add(elPolo); 
-		foodCourtOptions.add(sbarro);
-		foodCourtOptions.add(johnysKitchen);
-		foodCourtOptions.add(kikka);
-		foodCourtOptions.add(theSpot);
+	
 		getServletContext().setAttribute("foodCourtOptions", foodCourtOptions);
-		
-//		Creating dining options
-		Restaurants cafe47 = new Restaurants(1,"cafe47", "img/campusDining/cafe47.jpg");
-		Restaurants everytable = new Restaurants(2,"everytable", "img/campusDining/everytable.png");
-		Restaurants goldenEagleExpress = new Restaurants(3,"goldenEagleExpress", "img/campusDining/goldenEagleExpress.jpeg");
-		Restaurants juiceItUp = new Restaurants(4,"juiceItUp", "img/campusDining/juiceItUp.png");
-		Restaurants kingCoffee = new Restaurants(5,"kingCoffee", "img/campusDining/kingCoffee.jpeg");
-		Restaurants starbucks = new Restaurants(6,"starbucks", "img/campusDining/starbucks.png");	
+
 		
 //		Creating Array to hold dining options to display in JSP 
 		ArrayList<Restaurants> diningOptions = new ArrayList<Restaurants>();
+		diningOptions.add(elPolo); 
+		diningOptions.add(sbarro);
+		diningOptions.add(johnysKitchen);
+		diningOptions.add(kikka);
+		diningOptions.add(theSpot);
 		diningOptions.add(cafe47); 
 		diningOptions.add(everytable); 
 		diningOptions.add(goldenEagleExpress);
