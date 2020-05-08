@@ -69,11 +69,11 @@ Review:
 <div class="rowTeam">
   <div class="columnTeam">
     <div class="cardTeam">
-      <img src="img/theTeam/peter.jpg" alt="John" style="width:50%">
+      <img src="img/theTeam/Peter.jpg" alt="John" style="width:50%">
       <div class="containerTeam">
         <h3>Peter Gatsby</h3>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>B.S. Computer Science <br>California State University, LA<br> 2021</p>
           <p><a href="mailto:pgatsby@calstatela.edu"><button class="buttonTeam"><i class="fas fa-envelope"></i> Contact</button></a></p>
       </div>
     </div>
@@ -85,7 +85,7 @@ Review:
       <div class="containerTeam">
         <h3>Ana Guardado</h3>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>B.S. Computer Science <br>California State University, LA<br> 2021</p>
          <p><a href="mailto:aguard12@calstatela.edu"><button class="buttonTeam"><i class="fas fa-envelope"></i> Contact</button></a></p>
       </div>
     </div>
@@ -97,7 +97,7 @@ Review:
       <div class="containerTeam">
         <h3>David Melendez</h3>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>B.S. Computer Science <br>California State University, LA<br> 2021</p>
           <p><a href="mailto:dmelen18@calstatela.edu"><button class="buttonTeam"><i class="fas fa-envelope"></i> Contact</button></a></p>
       </div>
     </div>
@@ -109,7 +109,7 @@ Review:
       <div class="containerTeam">
         <h3>Samantha Simpson</h3>
         <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>B.S. Computer Science <br>California State University, LA<br> 2021</p>
         <p><a href="mailto:ssimps11@calstatela.edu"><button class="buttonTeam"><i class="fas fa-envelope"></i> Contact</button></a></p>
       </div>
     </div>
