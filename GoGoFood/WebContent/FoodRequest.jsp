@@ -26,27 +26,30 @@ Review:
    	<script src="https://kit.fontawesome.com/0c497e39db.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="MainHomePage">
-         <img src="img/gogofood.png" width="30" height="30" class="d-inline-block align-top" alt="">
-         GoGoFood</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="FoodRequest">Menu <span class="sr-only">(current)</span></a>
-          </div>
-          <div class="navbar-nav ml-lg-auto">
-            <a class="nav-item nav-link" href="ShoppingCartS"><i class="fas fa-shopping-cart"></i> Cart</a>
-          </div>
-        </div>
-      </nav>      
+	<!--  START OF NAV BAR  -->
+	<ul class="topnav">
+		<li><img src="img/USEgogofoodlogo1.jpg" id="logo"
+			alt="GoGo Food logo" style="width: 150px; height: 120px"></li>
+        <li class="right"><a href="#Sign Up"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+        <li class="right"><a href="#Sign In"><i class="fas fa-user"></i> Sign In</a></li>
+		<li>
+			<div class="floating">
+				<div class="card-object rotate">
+				</div><!-- card-object rotate -->
+			</div><!-- foating  -->
+		</li>
+	</ul>
+	<!--  END OF NAV BAR  -->
+	
     <div class="container spacer">
     	<div class="top-banner">
     		<h1 class="text-center">ENJOY OUR TOP PICKS!</h1>
     	</div>
-        <div class="row justify-content-between mb-5">
+    </div>
+    
+    
+    <div class="container">
+            <div class="row justify-content-between mb-5">
         	<c:forEach items='${combos}' var='combo'> 
         		<form action="FoodRequest" method="POST">
 		            <div class="col">
@@ -68,7 +71,8 @@ Review:
 
 
 
-        <footer class="footer">
+
+        <footer class="footer text-center">
             ©2020 GoGo Food - California State University, Los Angeles
         </footer>
 

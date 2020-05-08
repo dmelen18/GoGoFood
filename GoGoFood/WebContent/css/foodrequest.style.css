@@ -1,26 +1,76 @@
-body{
-	background-color: orange;
+/*
+to add .css file: 
+    GoGoFood > right click > new > other > CSS file
+*/
+@charset "ISO-8859-1";
+
+body {
+	background-color: #FFCE00;
 }
-.navbar{
-	background-color: #ffc830;
-}
+
 .top-banner{
-	background-color:#FFFFFF;
-	padding:50px;
-	margin: 10px 0 10px 0;
+	background-color: white;
+	padding: 70px;
 }
+
 .container.spacer{
-	padding: 50px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
-.footer{
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	border-bottom: 6px solid #D10000;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+	display: block;
+	color: whitesmoke;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: black;
+}
+
+ul.topnav li a.active {
+	background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+	float: right;
+	background-color: #4a4f55;
+}
+
+ul.topnav li.middle {
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: none;
+}
+
+@media screen and (max-width: 600px) {
+	ul.topnav li.right, ul.topnav li {
+		float: none;
+	}
+}
+
+
+
+.footer {
 	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	padding: 10px;
-	background-color: #ffc830;
-	color: #000000 !important;
-	text-align: center; 
-	line-height: 20px;
+	background-color: #efefef;
+	color: #AFAFAF !important;
+
 }
 
