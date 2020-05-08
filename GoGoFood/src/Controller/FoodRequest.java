@@ -20,7 +20,6 @@ import Model.ShoppingCart;
 @WebServlet(urlPatterns="/FoodRequest", loadOnStartup=1)
 public class FoodRequest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	int i = 0; 
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -41,14 +40,14 @@ public class FoodRequest extends HttpServlet {
 		ArrayList<FoodItem> combos = new ArrayList<FoodItem>();
 		combos.add(combo1); combos.add(combo2); combos.add(combo3);
 		getServletContext().setAttribute("combos", combos);
+		ShoppingCart shoppingcart = new ShoppingCart(0, "Dwayne the Rock Johnson", "310-0690-0420", "LIB");
+		getServletContext().setAttribute("shoppingcart", shoppingcart);
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ShoppingCart shoppingcart = new ShoppingCart(i++, "Dwayne the Rock Johnson", "310-0690-0420", "LIB");
-		getServletContext().setAttribute("shoppingcart", shoppingcart);
 		request.getRequestDispatcher("/FoodRequest.jsp").forward(request, response);
 	}
 
