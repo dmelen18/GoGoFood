@@ -69,7 +69,7 @@ Review:
 <div class="rowTeam">
   <div class="columnTeam">
     <div class="cardTeam">
-      <img src="img/hamburgerClipart.png" alt="John" style="width:50%">
+      <img src="img/theTeam/peter.jpg" alt="John" style="width:50%">
       <div class="containerTeam">
         <h3>Peter Gatsby</h3>
         <p class="title">CEO & Founder</p>
