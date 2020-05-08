@@ -27,14 +27,7 @@ public class ShoppingCartS extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		@SuppressWarnings("unchecked")
     	//Get shoppingCart list from FoodRequest.java class
-		//ShoppingCart shoppingCart = (ShoppingCart) (getServletContext().getAttribute("shoppingCart"));
-		
-		//Dummy data used from UserB_Deliver.java. To be removed with FoodRequest.java completed.
-		ArrayList<FoodItem> items2 = new ArrayList<FoodItem>();
-    	items2.add(new FoodItem("Famous Star Burger", 7.99));
-    	items2.add(new FoodItem("Small Fries", 1.99));
-    	
-		ShoppingCart shoppingCart = new ShoppingCart(2, "John", "SHC-123", "321-435-8901", items2);
+		ShoppingCart shoppingCart = (ShoppingCart) (getServletContext().getAttribute("shoppingCart"));
 		
 		//Calculate the costs for the shoppingCart
 		double subtotalCost = 0;
