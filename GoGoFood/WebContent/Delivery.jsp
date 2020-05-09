@@ -32,6 +32,10 @@
         </tr>
         <tr>
             <th>Order Location</th>
+            <td>${phone}</td>
+        </tr>
+        <tr>
+            <th>Order Phone</th>
             <td>${location}</td>
         </tr>
         <tr>

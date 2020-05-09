@@ -41,7 +41,7 @@ public class FoodRequest extends HttpServlet {
 		combos.add(combo1); combos.add(combo2); combos.add(combo3);
 		getServletContext().setAttribute("combos", combos);
 		ShoppingCart shoppingcart = new ShoppingCart(0, "Dwayne the Rock Johnson", "310-0690-0420", "LIB");
-		getServletContext().setAttribute("shoppingcart", shoppingcart);
+		getServletContext().setAttribute("shoppingCart", shoppingcart);
     }
 
 	/**
@@ -57,12 +57,10 @@ public class FoodRequest extends HttpServlet {
 	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//gets user shoppingcart
-		ShoppingCart shoppingcart = (ShoppingCart) (getServletContext().getAttribute("shoppingcart"));
+		ShoppingCart shoppingcart = (ShoppingCart) (getServletContext().getAttribute("shoppingCart"));
 		//retrieves users food request
 		int id = Integer.parseInt(request.getParameter("id"));
 		System.out.print(id);
-		// retrieve user's personal shoppingcart
-		ArrayList<FoodItem> sc = (ArrayList<FoodItem>) getServletContext().getAttribute("shoppingCart");
 		// retrieves possible food combos to match id
 		ArrayList<FoodItem> combos = (ArrayList<FoodItem>) getServletContext().getAttribute("combos");
 		//Searches combos for food with matching id to add to shopping cart

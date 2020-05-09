@@ -32,7 +32,7 @@ Review:
             right: 0;
             bottom: 0;
             padding: 10px;
-            background-color: #efefef;
+            background-color: ##FFCE00;
             color: #AFAFAF !important;
             text-align: center; /
             line-height: 20px;
@@ -42,8 +42,8 @@ Review:
 </head>
 <body>
 	<!-- TO INCLUDE THE NAVBAR THAT IS USED ACROSS ALL THE WEBPAGES -->
-    <div class='container'>
-    	<div class='row'>
+    <div class='container p-3'>
+    	<div class='row py-4'>
     		<div class='col align-self-center'>
 				<div class='card'>
 					<div class='card-body'>
@@ -96,7 +96,8 @@ Review:
 									<tr>
 										<c:if test='${totalCost > 0.00}'>
 											<form action='OrderManagementS' method='post'>
-												<td colspan='2'><input type='button' class='btn btn-dark btn-block' value='Pay Now'></button></td>
+												<td colspan='2'><input type='submit' class='btn btn-dark btn-block' value='Pay Now'></button></td>
+												<input type='hidden' name='hide' id='hide' value='test'>
 											</form>
 										</c:if>
 									</tr>
