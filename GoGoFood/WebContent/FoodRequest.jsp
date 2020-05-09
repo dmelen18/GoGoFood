@@ -28,16 +28,21 @@ Review:
 <body>
 	<!--  START OF NAV BAR  -->
 	<ul class="topnav">
-		<li><img src="img/USEgogofoodlogo1.jpg" id="logo"
-			alt="GoGo Food logo" style="width: 150px; height: 120px"></li>
-        <li class="right"><a href="#Sign Up"><i class="fas fa-user-plus"></i> Sign Up</a></li>
-        <li class="right"><a href="#Sign In"><i class="fas fa-user"></i> Sign In</a></li>
-		<li>
-			<div class="floating">
-				<div class="card-object rotate">
-				</div><!-- card-object rotate -->
-			</div><!-- foating  -->
+		<li class="right">
+			<div class="navbar-nav ml-lg-auto">
+				<a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
+					Cart</a>
+			</div>
 		</li>
+		<li class="right"><a href="#Sign Up"><i
+				class="fas fa-user-plus"></i> Sign Up</a></li>
+		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
+				Sign In</a></li>
+		<li class="right"><a href="MainHomePage"><i
+				class="fas fa-home"></i></a></li>
+		<a href="MainHomePage"><img src="img/USEgogofoodlogo1.jpg"
+			id="logo" alt="GoGo Food logo" style="width: 120px; height: 80px"></a>
+		<h1 class="text-center">Order Here</h1>
 	</ul>
 	<!--  END OF NAV BAR  -->
 	
