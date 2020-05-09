@@ -1,32 +1,28 @@
 body {
-    background-color: #FFCE00;
+background: #ffce00;
+
     
 }
+
+
  h1{
  font-family: sans-serif;
  font-variant: small-caps;
  }
+  h2{
+ font-family: sans-serif;
+ font-variant: small-caps;
+ }
      
-.top-banner{
-    background-color:#FFFFFF;
-    padding:50px;
-    margin: 10px 0 10px 0;
-    border-style: groove;
-}
-.container.spacer{
-    padding: 50px;
-}
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
-    border-bottom: 6px solid #D10000;
+
 }
-ul.topnav li {
-    float: left;
-}
+
 ul.topnav li a {
     display: block;
     color: whitesmoke;
@@ -41,14 +37,44 @@ ul.topnav li.right {
     float: right;
     background-color: #4a4f55;
 }
-ul.topnav li.middle {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-    transform: translate(-50%, -50%);
+
+ul.topnav li.left {
+    float: left;
+    background-color: #4a4f55;
 }
 
+
+
+ul.topnavV {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 6px solid #D10000;
+    
+    
+}
+ul.topnavV li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: black;
+    
+}
+ul.topnavV li a.active {
+    background-color: #4CAF50;
+}
+ul.topnavV li.right {
+    float: right;
+    background-color: #4a4f55;
+}
+
+ul.topnavV li.left {
+    float: left;
+    background-color: #4a4f55;
+}
 @media screen and (max-width: 600px) {
     ul.topnav li.right, ul.topnav li {
         float: none;
@@ -63,6 +89,19 @@ a:visited {
     text-decoration: none;
     color: whitesmoke;
 }
+
+
+.top-banner{
+    background-color:#FFFFFF;
+    padding:50px;
+    margin: 10px 0 10px 0;
+    border-style: groove;
+}
+
+.container.spacer{
+    padding: 50px;
+}
+
 .footer {
     position: fixed;
     left: 0;

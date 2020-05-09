@@ -29,20 +29,48 @@ Review:
 </head>
 <body>
 	<!-- **************************** START OF NAV BAR *********************************************** -->
-	<ul class="topnav">
-		<a class="navbar-brand" href="MainHomePage"><li><img
-				src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
-				style="width: 100px; height: 70px"></li></a>
-		<li class="right"><a href="#Sign Up"><i class="fas fa-user-plus"></i> Sign Up</a></li>
-		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i> Sign In</a></li>
+	<ul class="topnavV">
 		<li class="right">
 			<div class="navbar-nav ml-lg-auto">
 				<a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
 					Cart</a>
 			</div>
 		</li>
+		<li class="right"><a href="#Sign Up"><i
+				class="fas fa-user-plus"></i> Sign Up</a></li>
+		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
+				Sign In</a></li>
+
+
+		<li class="left"><img src="img/USEgogofoodlogo1.jpg" id="logo"
+			alt="GoGo Food logo" style="width: 120px; height: 80px"></li>
+		<h2 class="text-center">Pick a Place to Order From</h2>
 	</ul>
 	<!--  END OF NAV BAR  -->
+	<!-- 
+    <ul class="topnav">
+        <li class="right"><a href="#Sign Up"><i
+                class="fas fa-user-plus"></i> Sign Up</a></li>
+        <li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
+                Sign In</a></li>
+          <li class="left"><a href="MainHomePage"><i
+                class="fas fa-home"></i> GoGo Food Home</a></li>
+    </ul>
+       <ul class="topnavV">
+       <li class="left"><img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
+                style="width: 120px; height: 80px"></li>
+        <h1 class="text-center">
+        <img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
+                style="width: 120px; height: 80px">  Pick a Place to Order From
+        </h1>
+            <li class="right">
+            <div class="navbar-nav ml-lg-auto">
+                <a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
+                    Cart</a>
+            </div>
+        </li>
+    </ul>
+    <!--  END OF NAV BAR  -->
 
 	<!-- **************************** FOOD COURT *********************************************** -->
 	<div class="container spacer">
@@ -60,16 +88,17 @@ Review:
 								style="width: 250px; height: 150px;">
 							<div class="card-body">
 								<input type="hidden" name='id' value='${foodCourtOptions.id}'>
-							<a href='FoodRequest'><button class="btn btn-primary disable" type='button' onclick="FoodRequest">
-								<i class="fas fa-thumbs-up"></i>  Order Here
-								</button></a>
+								<a href='FoodRequest'><button
+										class="btn btn-primary disable" type='button'
+										onclick="FoodRequest">
+										<i class="fas fa-thumbs-up"></i> Order Here
+									</button></a>
 							</div>
 						</div>
 					</div>
 				</form>
 			</c:forEach>
 		</div>
-
 	</div>
 	<!-- END OF FOOD COURT -->
 
@@ -87,9 +116,10 @@ Review:
 								style="width: 250px; height: 150px;">
 							<div class="card-body">
 								<input type="hidden" name='id' value='${diningOptions.id}'>
-								<a href='FoodRequest'><button class="btn btn-primary disabled" type='submit'>
-									<i class=""></i> Coming Soon
-								</button></a>
+								<a href='FoodRequest'><button
+										class="btn btn-primary disabled" type='submit'>
+										<i class=""></i> Coming Soon
+									</button></a>
 							</div>
 						</div>
 					</div>
