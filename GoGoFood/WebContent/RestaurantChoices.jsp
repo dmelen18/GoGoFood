@@ -29,7 +29,7 @@ Review:
 </head>
 <body>
 	<!-- **************************** START OF NAV BAR *********************************************** -->
-	<ul class="topnavV">
+	<ul class="topnav">
 		<li class="right">
 			<div class="navbar-nav ml-lg-auto">
 				<a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
@@ -40,41 +40,16 @@ Review:
 				class="fas fa-user-plus"></i> Sign Up</a></li>
 		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
 				Sign In</a></li>
-
-
-		<li class="left"><img src="img/USEgogofoodlogo1.jpg" id="logo"
-			alt="GoGo Food logo" style="width: 120px; height: 80px"></li>
+		<li class="right"><a href="MainHomePage"><i
+				class="fas fa-home"></i></a></li>
+		<a href="MainHomePage"><img src="img/USEgogofoodlogo1.jpg"
+			id="logo" alt="GoGo Food logo" style="width: 120px; height: 80px"></a>
 		<h2 class="text-center">Pick a Place to Order From</h2>
 	</ul>
 	<!--  END OF NAV BAR  -->
-	<!-- 
-    <ul class="topnav">
-        <li class="right"><a href="#Sign Up"><i
-                class="fas fa-user-plus"></i> Sign Up</a></li>
-        <li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
-                Sign In</a></li>
-          <li class="left"><a href="MainHomePage"><i
-                class="fas fa-home"></i> GoGo Food Home</a></li>
-    </ul>
-       <ul class="topnavV">
-       <li class="left"><img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
-                style="width: 120px; height: 80px"></li>
-        <h1 class="text-center">
-        <img src="img/USEgogofoodlogo1.jpg" id="logo" alt="GoGo Food logo"
-                style="width: 120px; height: 80px">  Pick a Place to Order From
-        </h1>
-            <li class="right">
-            <div class="navbar-nav ml-lg-auto">
-                <a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
-                    Cart</a>
-            </div>
-        </li>
-    </ul>
-    <!--  END OF NAV BAR  -->
 
 	<!-- **************************** FOOD COURT *********************************************** -->
 	<div class="container spacer">
-
 		<div class="top-banner">
 			<h1 class="text-center">Currently Serving</h1>
 		</div>
@@ -95,7 +70,6 @@ Review:
 									</button></a>
 							</div>
 						</div>
-					</div>
 				</form>
 			</c:forEach>
 		</div>
