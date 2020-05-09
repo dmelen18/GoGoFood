@@ -84,10 +84,25 @@
 							<tr>
 								<th colspan='2' style='text-align:center'>Order Updates</th>
 							</tr>
-
+							
 							<tr>
-								<td>${date}</td>
-								<td class='text-right'>${status}</td>
+								<td>John (321-435-8901, located at SHC-123) has chosen your order!</td>
+								<td class='text-right'>3:06pm</td>
+							</tr>
+							
+							<tr>
+								<td>John has placed your order at the restaurant.</td>
+								<td class='text-right'>3:20pm</td>
+							</tr>
+							
+							<tr>
+								<td>John has picked up your order from the restaurant. They are on their way to deliver!</td>
+								<td class='text-right'>3:31pm</td>
+							</tr>
+							
+							<tr>
+								<td>John has delivered your order.</td>
+								<td class='text-right'>3:40pm</td>
 							</tr>
 						</table>
 					</div>

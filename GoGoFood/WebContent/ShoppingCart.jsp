@@ -42,7 +42,7 @@ Review:
 </head>
 <body>
 	<!-- TO INCLUDE THE NAVBAR THAT IS USED ACROSS ALL THE WEBPAGES -->
-    <div class='container p-3'>
+    <div class='container p-1'>
     	<div class='row py-4'>
     		<div class='col align-self-center'>
 				<div class='card'>
@@ -93,14 +93,19 @@ Review:
 										<td style="text-align:right">$${totalCost}</td>
 									</tr>
 									
-									<tr>
-										<c:if test='${totalCost > 0.00}'>
-											<form action='OrderManagementS' method='post'>
-												<td colspan='2'><input type='submit' class='btn btn-dark btn-block' value='Pay Now'></button></td>
-												<input type='hidden' name='hide' id='hide' value='test'>
-											</form>
-										</c:if>
-									</tr>
+									
+									<c:if test='${totalCost > 0.00}'>
+										<form action='OrderManagementS' method='post'>
+											<tr>
+												<td colspan='2'><input type='submit' class='btn btn-dark btn-block' value='Pay with card'></td>
+											</tr>
+											
+											<tr>
+												<td colspan='2'><input type='submit' class='btn btn-dark btn-block' value='Pay with PayPal'></td>
+											</tr>
+										</form>
+									</c:if>
+									
 								</table>
 							</div>
 						</div>
