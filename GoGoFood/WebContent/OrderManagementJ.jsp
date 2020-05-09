@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-	<div class='container p-3'>
+	<div class='container p-4'>
 		<div class='card'>
 			<div class='card-body'>
 				<div class='row py-4 border-bottom'>
