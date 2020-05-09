@@ -44,14 +44,14 @@ Review:
 				class="fas fa-home"></i></a></li>
 		<a href="MainHomePage"><img src="img/USEgogofoodlogo1.jpg"
 			id="logo" alt="GoGo Food logo" style="width: 120px; height: 80px"></a>
-		<h2 class="text-center">Pick a Place to Order From</h2>
+		<h1 class="text-center">Pick a Place to Order From</h1>
 	</ul>
 	<!--  END OF NAV BAR  -->
 
 	<!-- **************************** FOOD COURT *********************************************** -->
 	<div class="container spacer">
 		<div class="top-banner">
-			<h1 class="text-center">Currently Serving</h1>
+			<h2 class="text-center">Currently Serving</h2>
 		</div>
 
 		<div class="row justify-content-between mb-5">
@@ -79,7 +79,7 @@ Review:
 	<!-- **************************** COMING SOON *********************************************** -->
 	<div class="container spacer">
 		<div class="top-banner">
-			<h1 class="text-center">COMING SOON</h1>
+			<h2 class="text-center">COMING SOON</h2>
 		</div>
 		<div class="row justify-content-between mb-5">
 			<c:forEach items='${diningOptions}' var='diningOptions'>
