@@ -101,7 +101,8 @@ Review:
 											</tr>
 											
 											<tr>
-												<td colspan='2'><input type='submit' class='btn btn-dark btn-block' value='Pay with PayPal'></td>
+												<td colspan='2'><input type="image" id="image" alt="Login"
+       src="img/paypal.png"></td>
 											</tr>
 										</form>
 									</c:if>
