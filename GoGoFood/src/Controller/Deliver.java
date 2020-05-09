@@ -41,6 +41,8 @@ public class Deliver extends HttpServlet {
 		ShoppingCart s = getEntry(i);
 		request.setAttribute("name", s.getName());
 		request.setAttribute("location", s.getLocation());
+		request.setAttribute("phone", s.getPhoneNumber());
+
 		request.setAttribute("details", s.printItems());
 		request.getRequestDispatcher("Delivery.jsp").forward(request, response);
 	}
