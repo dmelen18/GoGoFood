@@ -6,6 +6,7 @@
 <head>
 <title>GoGo Food Order Management</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/restaurants.css">
 	<!-- used styling code from Peter's FoodRequest.jsp for consistency -->
 	<script src="https://kit.fontawesome.com/0c497e39db.js" crossorigin="anonymous"></script>
 	<style>
@@ -30,6 +31,26 @@
     </style>
 </head>
 <body>
+	<!-- **************************** START OF NAV BAR *********************************************** -->
+	<ul class="topnav">
+		<li class="right">
+			<div class="navbar-nav ml-lg-auto">
+				<a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
+					Cart</a>
+			</div>
+		</li>
+		<li class="right"><a href="#Sign Up"><i
+				class="fas fa-user-plus"></i> Sign Up</a></li>
+		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
+				Sign In</a></li>
+		<li class="right"><a href="MainHomePage"><i
+				class="fas fa-home"></i></a></li>
+		<a href="MainHomePage"><img src="img/USEgogofoodlogo1.jpg"
+			id="logo" alt="GoGo Food logo" style="width: 120px; height: 80px"></a>
+	</ul>
+	<!--  END OF NAV BAR  -->
+
+	
 	<div class='container p-4'>
 		<div class='card'>
 			<div class='card-body'>

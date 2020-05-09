@@ -17,6 +17,7 @@ Review:
 	<meta charset="UTF-8">
 	<title>GoGo Food Shopping Cart</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/restaurants.css">
 	<!-- used styling code from Peter's FoodRequest.jsp for consistency -->
 	<script src="https://kit.fontawesome.com/0c497e39db.js" crossorigin="anonymous"></script>
     <style>
@@ -41,7 +42,26 @@ Review:
     </style>
 </head>
 <body>
-	<!-- TO INCLUDE THE NAVBAR THAT IS USED ACROSS ALL THE WEBPAGES -->
+	<!-- **************************** START OF NAV BAR *********************************************** -->
+	<ul class="topnav">
+		<li class="right">
+			<div class="navbar-nav ml-lg-auto">
+				<a href="ShoppingCartS"><i class="fas fa-shopping-cart"></i>
+					Cart</a>
+			</div>
+		</li>
+		<li class="right"><a href="#Sign Up"><i
+				class="fas fa-user-plus"></i> Sign Up</a></li>
+		<li class="right"><a href="#Sign In"><i class="fas fa-user"></i>
+				Sign In</a></li>
+		<li class="right"><a href="MainHomePage"><i
+				class="fas fa-home"></i></a></li>
+		<a href="MainHomePage"><img src="img/USEgogofoodlogo1.jpg"
+			id="logo" alt="GoGo Food logo" style="width: 120px; height: 80px"></a>
+	</ul>
+	<!--  END OF NAV BAR  -->
+
+
     <div class='container p-1'>
     	<div class='row py-4'>
     		<div class='col align-self-center'>
@@ -101,7 +121,7 @@ Review:
 											</tr>
 											
 											<tr>
-												<td colspan='2'><input type="image" id="image" alt="Login"
+												<td colspan='2' style='text-align:center'><input type="image" id="image" alt="Login"
        src="img/paypal.png"></td>
 											</tr>
 										</form>
