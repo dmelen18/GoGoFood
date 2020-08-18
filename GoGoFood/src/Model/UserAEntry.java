@@ -13,17 +13,21 @@ import java.util.Date;
 
 public class UserAEntry {
 
+
     Integer id;
     String name;
-    Integer phoneNumber;
+  //  Integer phoneNumber;
+    String location;
+    String details;
     
- 
 
-    public UserAEntry( Integer id, String name, Integer phoneNumber )
+    public UserAEntry( Integer id, String name, String location, String details)
     {
         this.id = id;
         this.name = name;
-        this.phoneNumber = phoneNumber;
+   //     this.phoneNumber = phoneNumber;
+        this.location = location;
+        this.details = details;
      
     }
 
@@ -46,16 +50,30 @@ public class UserAEntry {
     {
         this.name = name;
     }
-    
-    public Integer getPhoneNumber()
-    {
-        return phoneNumber;
-    }
+//    public Integer getPhoneNumber()
+//    {
+//        return phoneNumber;
+//    }
+//
+//    public void setPhoneNumber( Integer phoneNumber )
+//    {
+//        this.phoneNumber = phoneNumber;
+//    }
 
-    public void setPhoneNumber( Integer phoneNumber )
-    {
-        this.phoneNumber = phoneNumber;
-    }
+	public String getLocation() {
+		return location;
+	}
 
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
 
 }
